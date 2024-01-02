@@ -1,0 +1,8 @@
+.menu_Navegacion input[type="search"] {
+    padding: 0.5em;
+}
+
+.menu_Navegacion img {
+    max-width: 450%;
+    height: auto;
+}
