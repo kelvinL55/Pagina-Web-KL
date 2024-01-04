@@ -10,22 +10,21 @@
 
 <body>    <!-- Encabezado -->
     <header class="menu_Navegacion"> 
-        <img src="img/logo.png" alt="Logo del Sitio web">
-        <input type="search" placeholder="¿Qué deseas buscar?">
+        <img src="img/logo_001.webp" alt="Logo del Sitio web">
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="secundario/rutas_paseo.html">Rutas de Paseo</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="#">Lista de Lugares</a></li>
                         <li><a href="#">Paraderos</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="secundario/explora.html">Explora</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="#">Lugares Turísticos</a>
-                            <ul>
+                            <ul clase submenu>
                                 <li><a href="#">Pichincha</a></li>
                                 <li><a href="#">Loja</a></li>
                             </ul>
@@ -36,14 +35,14 @@
                     </ul>
                 </li>
                 <li><a href="secundario/ecuador.html">Ecuador</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="#">Provincias</a></li>
                         <li><a href="#">Lugares icónicos</a></li>
                         <li><a href="#">Recomendados</a></li>
                     </ul>
                 </li>
                 <li><a href="secundario/contactos.html">Contactos</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="#">Acerca de</a></li>
                         <li><a href="#">Decide ser más</a></li>
                         <li><a href="#">Gobernanza</a></li>
@@ -53,10 +52,11 @@
                 <li><a href="secundario/registro.html">Registrarse</a></li>
             </ul>
         </nav>
-        <span>Rutas Pichincha</span>
+        <input type="search" placeholder="¿Qué deseas buscar?">
     </header>    
     <br>        <!-- Pie de página -->
     <header>
+        <span>Rutas Pichincha</span>
         <h2>Encuentra tu aventura</h2>
         <input type="search" placeholder="Busca por lugar de ruta o parque">
     </header>
