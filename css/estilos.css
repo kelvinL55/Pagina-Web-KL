@@ -2,20 +2,28 @@
 * {
 	margin: 0;
 	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 body {
-	background: white;
+	background: rgba(227, 243, 202, 0.158);
+}
+.menu_Navegacion input[type="search"] {
+    padding: 0.4em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
+.menu_Navegacion img {
+    max-width: 100px;
+    height: auto;
+}
 .menu_Navegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.4em 1em;
     background-color: #292626fd; /* Fondo oscuro similar al de Apple */
     color: #fff; /* Color del texto */
 }
@@ -24,55 +32,50 @@ body {
     display: flex;
 }
 
-
-.menu ul {
+.menu > ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.menu li {
+.menu > ul > li {
     margin-right: 10px;
     position: relative;
 }
+.menu > ul > li:first-child >a{
+    background-image: url(../img/inicio_icono.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18px 35px;
+}
+.menu > ul > li:first-child:hover >a{
+    background-image: url(../img/inicio_icono.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-.menu a {
-   
+.menu > ul > li > a { 
     display: block;
 	padding: 10px 10px;
 	color: #fff;
-	font-family: 'Open sans';
+    font-size: small;
+	font-family: Verdana;
+    text-transform: uppercase;
 	text-decoration: none;
 	transition: all 300ms ease;
     text-decoration: none;
 }
 
-.menu li a:hover {
-	transform: scale(1.2);
-	background: #40E0D0;
+.menu > ul > li > a:hover {
+	transform: scale(1.1);
+	background: #40e063;
 	color: #000;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 10px 0px rgba(195, 233, 197, 0.5);
 	transition: all .3s;
 }
-
-.submenu {
-	position: absolute;
-	background: #333333;
-	width: 140%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.4s;
-}
-
-.submenu li a {
-	display: block;
-	top: 100px;
-	padding: 10px;
-	color: #fff;
-	text-decoration: none;
-}
-
 .menu li:hover .submenu {
 	visibility: visible;
 	opacity: 1;
@@ -92,15 +95,9 @@ body {
     flex-direction: column;
 }
 
-.menu_Navegacion input[type="search"] {
-    padding: 0.4em;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-}
 
-.menu_Navegacion img {
-    max-width: 100px;
-    height: auto;
+#selecion{
+    transform: scale(1.1);
+    background-color: #40e063;
+    box-shadow: 0px 0px 10px 0px rgba(195, 233, 197, 0.5);
 }
-
