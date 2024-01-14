@@ -248,6 +248,42 @@ section p {
     margin-top: 20px;
     line-height: 1.6;
     }
+/*Estolos para las tarjetas*/
+
+.tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta h1, .tarjeta h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 16px;
+}
+
+.tarjeta span {
+    display: block;
+    margin: 8px 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.tarjeta p {
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
 
 /*Responsivos*/
 @media screen and (max-width: 820px) {
@@ -286,6 +322,163 @@ section p {
     }
 
 }
+/*Estilos para la pagina Rutas Paseo */
+/* Estilo global del cuerpo */
+.cuerpo_001 {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    color: #333;
+    background-color: #f7f7f7; 
+    display: grid;
+    padding: 30px 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+    align-items: center;
+}
+
+/* Estilos para la cabecera */
+
+.parte__1 .inicio {
+    background-color: #fafafa; 
+    padding: 20px; 
+    border-bottom: 1px solid #ececec; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.parte__1 .inicio h1 {
+    font-size: 1.8em; 
+    color: #72c524;
+    text-align: center;
+}
+
+/* Estilos para las tarjetas de contenido */
+.parte__2{
+display: grid;
+grid-template-columns: 1fr;
+grid-column-gap: 30px;
+}
+
+@media (width > 500px){
+    .parte__2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (width > 800px){
+    .parte__2{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.parte__2 .tarjeta {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: none; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.parte__2 .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); 
+}
+.parte__2 .tarjeta img{
+    width: 250px;
+    height:15em;
+}
+
+
+
+/* Estilos para el pie de página */
+.parte__3 .final {
+    background-color: #3e463bd7;
+    color: #ffffff;
+    padding: 40px 20px; 
+    text-align: left; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.parte__3 .final img {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.parte__3 .final h2 {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+}
+
+.parte__3 .final p {
+    font-size: 1em; 
+    margin-bottom: 0; 
+}
+
+
+/* estolo para la pagina EXPLORA */
+/* Estilos para el contenedor principal */
+.cuerpo_pri__001 {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #fff; 
+}
+
+/* Estilos para las secciones de contenido */
+.Contenido__01, .Contenido__02 {
+    margin-bottom: 40px; 
+}
+
+/* Estilos para la cabecera de la sección */
+.Contenido__01 header, .Contenido__02 header {
+    background-color: #f8f8f8; 
+    padding: 20px;
+    border-bottom: 1px solid #ececec;
+}
+
+.Contenido__01 header h2, .Contenido__02 header h2 {
+    font-size: 2em; 
+    color: #000000; 
+    margin-bottom: 20px;
+}
+
+/* Estilos para el video y las imágenes */
+.Contenido__01 video, .Contenido__01 img, .Contenido__02 img {
+    width: 100%; /* Ancho completo dentro de su contenedor */
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin-bottom: 20px; 
+}
+
+/* Estilos para los artículos y los asides */
+.Contenido__01 article, .Contenido__02 aside {
+    padding: 20px;
+    background-color: #fafafa; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+/* Estilos para los párrafos dentro de los asides */
+.Contenido__02 aside p {
+    font-size: 1em; 
+    line-height: 1.6; 
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
+/* Estilos para la clase Contenido__03 */
+.Contenido__03 {
+    background-color: #eef2f7; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
 /* Estilos para la sección de contacto */
     .contactos {
         background-color: #f8f8f8;
@@ -361,6 +554,98 @@ section p {
         color: #555;
     }
 
+/*Estilos para la pagina Resgistrate - Formularo de Registro*/
+.formulario {
+	width: 370px;
+	background: #708090;
+	padding: 30px;
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 4px;
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+}
+
+.formulario h4 {
+	color: #000;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.controles {
+	width: 100%;
+	background: #000000;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #000;
+	font-size: 18px;
+	color: white;
+}
+
+.formulario a {
+	color: white;
+	text-decoration: none;
+}
+
+.formulario a:hover {
+	border: 1px solid #000;
+	color: white;
+	text-decoration: none;
+}
+
+.formulario .botons {
+	width: 70%;
+	background: #D6D6D4;
+	border: none;
+	padding: 13px;
+	margin: 10px 45px;
+	font-size: 18px;
+	box-shadow: 2px 0px 10px 5px rgba(0, 0, 0, 0.5);
+	transition: all .5s;
+}
+
+.Contenido_principal {
+
+    font-family: 'Arial', sans-serif;
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Contenido_principal .titulo h1 {
+    color: #333;
+    text-align: center;
+}
+
+.contenido_multimedia_img {
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px;
+}
+
+.contenido_multimedia_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 0 0 8px 8px;
+}
+
+figcaption p {
+    color: #555;
+    line-height: 1.6;
+}
 
 /* Estilos para el Pie de pagina*/
 .pie-pagina{
