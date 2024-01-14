@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>    <!-- Encabezado -->
@@ -13,15 +14,15 @@
         <img src="img/logo_001.webp" alt="Logo del Sitio web">
         <nav class="menu">
             <ul>
-                <li><a href="index.html" id="selecion"></a></li>
+                <li><a href="index.html" id="seleccion"></a></li>
                 <li><a href="secundario/rutas_paseo.html">Rutas Paseo</a>
-                    <ul class="submenu">
+                    <ul>
                         <li><a href="#">Lista Lugares</a></li>
                         <li><a href="#">Paraderos</a></li>
                     </ul>
                 </li>
                 <li><a href="secundario/explora.html">Explora</a>
-                    <ul class="submenu">
+                    <ul>
                         <li><a href="#">Lugares Turísticos</a>
                             <ul> 
                                 <li><a href="#">Pichincha</a></li>
@@ -34,14 +35,14 @@
                     </ul>
                 </li>
                 <li><a href="secundario/ecuador.html">Ecuador</a>
-                    <ul class="submenu">
+                    <ul>
                         <li><a href="#">Provincias</a></li>
                         <li><a href="#">Lugares icónicos</a></li>
                         <li><a href="#">Recomendados</a></li>
                     </ul>
                 </li>
                 <li><a href="secundario/contactos.html">Contactos</a>
-                    <ul class="submenu">
+                    <ul>
                         <li><a href="#">Acerca de</a></li>
                         <li><a href="#">Decide ser más</a></li>
                         <li><a href="#">Gobernanza</a></li>
@@ -51,75 +52,102 @@
                 <li><a href="secundario/registro.html">Registrarse</a></li>
             </ul>
         </nav>
-        <input type="search" placeholder="¿Qué deseas buscar?">
+        <div class="buscador">
+            <input type="search" placeholder="¿Qué deseas buscar?">
+        </div>
     </header>    
-    <br>        <!-- Pie de página -->
-    <header>
-        <h2>Encuentra tu aventura</h2>
-        <input type="search" placeholder="Busca por lugar de ruta o parque">
-    </header>
-	<article>
-        <h1>Explora rutas cercanas:</h1>
-        <p> Rutas turísticas de Pichincha. Disfruta de la cultura, naturaleza, e historia que tiene Pichincha</p>
-        <img src="img/mapaP.png" alt="Imagen de ruta" style="width: 60%;">
-    </article>
-    <section>
-        <h3>¡Ven y vive aventuras únicas en un solo lugar!</h3>
-        <p>Si buscas vivir aventuras únicas en un solo lugar, tenemos justo lo que necesitas. En nuestro destino, podrás disfrutar de diversas actividades que te harán sentir lleno de emoción y adrenalina. Desde deportes extremos hasta expediciones en la naturaleza, tenemos todo lo que necesitas para vivir una experiencia inolvidable. Además, contamos con alojamiento y servicios de calidad para que tu estadía sea cómoda y placentera. ¡Ven y vive la aventura de tu vida en nuestro destino!</p>
-        <video src="videos/video_turismo_3.mp4" style="width: 50%;" controls></video>   	
-    </section>
-    <section><!-- Tabla -->
-        <h2>Lista de servicios por cantones en la provincia de Pichincha:</h2>
-        <table>
-            <tr>
-                <th>Cantón</th>
-                <th>Servicios</th>
-            </tr>
-            <tr>
-                <td>Quito</td>
-                <td>Senderismo<br>Ciclismo<br>Parapente</td>
-            </tr>
-            <tr>
-                <td>Mejía</td>
-                <td>Senderismo<br>Ciclismo<br>Camping</td>
-            </tr>
-            <tr>
-                <td>Pedro Moncayo</td>
-                <td>Senderismo<br>Ciclismo<br>Observación de aves</td>
-            </tr>
-            <tr>
-                <td>Cayambe</td>
-                <td>Senderismo<br>Ciclismo<br>Escalada</td>
-            </tr>
-            <tr>
-                <td>Rumiñahui</td>
-                <td>Senderismo<br>Ciclismo<br>Cabalgatas</td>
-            </tr>
-            <tr>
-                <td>San Miguel de los Bancos</td>
-                <td>Senderismo<br>Ciclismo<br>Canyoning</td>
-            </tr>
-            <tr>
-                <td>Pedro Vicente Maldonado</td>
-                <td>Senderismo<br>Ciclismo<br>Rafting</td>
-            </tr>
-            <tr>
-                <td>Puerto Quito</td>
-                <td>Senderismo<br>Ciclismo<br>Pesca deportiva</td>
-            </tr>
-        </table>
-        <P>Descubre la naturaleza en su máxima expresión en los cantones de Pichincha.</p>
-    </section>    
+    <br>  
+    <div class="contenido_principal"> 
+        <header class="busca_tu_Aventura">
+            <h2>Encuentra tu aventura</h2>
+            <input type="search" placeholder="Busca por lugar de ruta o parque">
+        </header>
+        <article>
+            <h1>Explora rutas cercanas:</h1>
+            <p> Rutas turísticas de Pichincha. Disfruta de la cultura, naturaleza, e historia que tiene Pichincha</p>
+            <img src="img/mapaP.png" alt="Imagen de ruta" style="width: 60%;">
+        </article>
+        <article>
+            <h3>¡Ven y vive aventuras únicas en un solo lugar!</h3>
+            <p>Si buscas vivir aventuras únicas en un solo lugar, tenemos justo lo que necesitas. En nuestro destino, podrás disfrutar de diversas actividades que te harán sentir lleno de emoción y adrenalina. Desde deportes extremos hasta expediciones en la naturaleza, tenemos todo lo que necesitas para vivir una experiencia inolvidable. Además, contamos con alojamiento y servicios de calidad para que tu estadía sea cómoda y placentera. ¡Ven y vive la aventura de tu vida en nuestro destino!</p>
+            <video src="videos/video_turismo_3.mp4" style="width: 50%;" controls></video>   	
+        </article>
+        <section><!-- Tabla -->
+            <h2>Lista de servicios por cantones en la provincia de Pichincha:</h2>
+            <table>
+                <tr>
+                    <th>Cantón</th>
+                    <th>Servicios</th>
+                </tr>
+                <tr>
+                    <td>Quito</td>
+                    <td>Senderismo<br>Ciclismo<br>Parapente</td>
+                </tr>
+                <tr>
+                    <td>Mejía</td>
+                    <td>Senderismo<br>Ciclismo<br>Camping</td>
+                </tr>
+                <tr>
+                    <td>Pedro Moncayo</td>
+                    <td>Senderismo<br>Ciclismo<br>Observación de aves</td>
+                </tr>
+                <tr>
+                    <td>Cayambe</td>
+                    <td>Senderismo<br>Ciclismo<br>Escalada</td>
+                </tr>
+                <tr>
+                    <td>Rumiñahui</td>
+                    <td>Senderismo<br>Ciclismo<br>Cabalgatas</td>
+                </tr>
+                <tr>
+                    <td>San Miguel de los Bancos</td>
+                    <td>Senderismo<br>Ciclismo<br>Canyoning</td>
+                </tr>
+                <tr>
+                    <td>Pedro Vicente Maldonado</td>
+                    <td>Senderismo<br>Ciclismo<br>Rafting</td>
+                </tr>
+                <tr>
+                    <td>Puerto Quito</td>
+                    <td>Senderismo<br>Ciclismo<br>Pesca deportiva</td>
+                </tr>
+            </table>
+            <P>Descubre la naturaleza en su máxima expresión en los cantones de Pichincha.</p>
+        </section> 
+    </div>   
     <br>
     <hr>
         <!-- Pie de página -->
-    <footer>
-        <img src="img/final.png" alt="Pie de pagina web">
-        <p>Iniciar una conversación | <a href="#">Encuéntranos aquí</a> | <a href="#">Siga con Nosotros</a></p>
-        <p>Email: <a href="mailto:kaloaiza@utpl.edu.ec">kaloaiza@utpl.edu.ec</a></p>
-        <p>Ubicación: Quito, Ecuador</p>
-        <p>Redes Sociales: <a href="https://www.facebook.com/" target="_blank">Facebook</a>, <a href="https://www.youtube.com/" target="_blank">YouTube</a>, etc.</p>
-        <p>&copy; 2023. Todos los derechos reservados.</p>    
+    <footer class="pie-pagina">
+        <div class="grupo_1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                       <img src="img/logo_001.webp" alt="Logo del Sitio web">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P>Nuestro equipo está formado por guías locales expertos que conocen cada sendero, cascada y mirador como la palma de su mano.</P>
+                <P>Con nosotros, podrás explorar Pichancha de una manera auténtica y segura.</P>
+            </div>  
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/"class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-instagram"></a>
+                    <a href="#"class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/"class="fa fa-youtube"></a>
+                </div>
+                <br>
+                <br>
+                <p>Email: <a href="mailto:kaloaiza@utpl.edu.ec">kaloaiza@utpl.edu.ec</a></p>    
+            </div>
+        </div>
+        <div class="grupo_2">
+            <small>&copy; 2024. <b>Rutas Pichincha</b> - Todos los derechos reservados.</small>
+        </div> 
     </footer>
 </body>
 </html>
