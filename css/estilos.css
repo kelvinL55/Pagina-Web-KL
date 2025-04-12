@@ -304,7 +304,7 @@ section p {
         transform: all 300ms ease;
         z-index: 100;
         opacity: 1;
-        *visibility: hidden;
+        visibility: hidden;
 
     }
     .menu > ul > li > a:hover {
@@ -706,11 +706,69 @@ figcaption p {
 .pie-pagina .grupo_2 small{
      font-size: 15px;
 }
-@media screen and (max-width:800px){    
+@media screen and (max-width:800px) {    
     .pie-pagina .grupo_1{
         width: 90%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
+}
+
+/* Estilos para el Modal */
+#openDialog {
+    background-color: #4aac32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+#openDialog:hover {
+    background-color: #3d8e29;
+}
+
+dialog {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h2 {
+    color: #4aac32;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+dialog p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+dialog button {
+    background-color: #4aac32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+dialog button:hover {
+    background-color: #3d8e29;
 }

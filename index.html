@@ -10,6 +10,17 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 
+        <!-- Modal sin JavaScript -->
+        <button id="openDialog" onclick="document.getElementById('myDialog').showModal()">Abrir Modal</button>
+
+        <dialog id="myDialog" closedby="any">
+            <h2>Bienvenido</h2>
+            <p>Este es un ejemplo de modal en HTML</p>
+            <form method="dialog">
+                <button>Cerrar</button>
+            </form>
+        </dialog>
+
 <body>    <!-- Encabezado -->
     <header class="menu_Navegacion"> 
         <img src="img/logo_001.webp" alt="Logo del Sitio web">
@@ -113,33 +124,6 @@
     </div>   
     <hr>
         <!-- Pie de página -->
-    <footer class="pie-pagina">
-        <div class="grupo_1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                       <img src="img/logo_001.webp" alt="Logo del Sitio web">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <P>Nuestro equipo está formado por guías locales expertos que conocen cada sendero, cascada y mirador como la palma de su mano.</P>
-                <P>Con nosotros, podrás explorar Pichancha de una manera auténtica y segura.</P>
-            </div>  
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/"class="fa fa-facebook"></a>
-                    <a href="#"class="fa fa-instagram"></a>
-                    <a href="#"class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/"class="fa fa-youtube"></a>
-                </div>
-                <br>
-                <br>
-                <p>Email: <a href="mailto:kaloaiza@utpl.edu.ec">kaloaiza@utpl.edu.ec</a></p>    
-            </div>
-        </div>
         <div class="grupo_2">
             <small>&copy; 2024. <b>Rutas Pichincha</b> - Todos los derechos reservados.</small>
         </div> 
